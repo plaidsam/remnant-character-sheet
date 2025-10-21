@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/remnant-character-sheet/static/css/main.ea2f6578.css",
-    "main.js": "/remnant-character-sheet/static/js/main.3e51a0de.js",
+    "main.css": "/remnant-character-sheet/static/css/main.9e1fde9b.css",
+    "main.js": "/remnant-character-sheet/static/js/main.2fee75fd.js",
     "index.html": "/remnant-character-sheet/index.html",
-    "main.ea2f6578.css.map": "/remnant-character-sheet/static/css/main.ea2f6578.css.map",
-    "main.3e51a0de.js.map": "/remnant-character-sheet/static/js/main.3e51a0de.js.map"
+    "main.9e1fde9b.css.map": "/remnant-character-sheet/static/css/main.9e1fde9b.css.map",
+    "main.2fee75fd.js.map": "/remnant-character-sheet/static/js/main.2fee75fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea2f6578.css",
-    "static/js/main.3e51a0de.js"
+    "static/css/main.9e1fde9b.css",
+    "static/js/main.2fee75fd.js"
   ]
 }
