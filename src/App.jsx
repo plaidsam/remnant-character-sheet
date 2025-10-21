@@ -151,13 +151,16 @@ const QuadrantBlock = ({ quadrantName, skillValue, aspectValue, stressValues, on
 
   return (
     <div className={`p-4 bg-gray-900/50 rounded-xl transition-all border-2 ${mainBorderColor} shadow-inner`}>
-      <div className={`flex items-center justify-between p-3 rounded-xl transition-all border-2 mb-4 ${mainBorderColor}`}>
-        <div className="flex items-center">
+      {/* Responsive Header: stacks on mobile, row on desktop */}
+      <div className={`flex flex-col sm:flex-row sm:items-center sm:justify-between p-3 rounded-xl transition-all border-2 mb-4 ${mainBorderColor}`}>
+        {/* Attribute Icon and Name */}
+        <div className="flex items-center mb-2 sm:mb-0">
           <Icon className={`w-6 h-6 ${mainTextColor} mr-3`} />
           <span className="font-extrabold text-xl text-white uppercase tracking-wider mr-4">{quadrantName}</span>
         </div>
-        <div className="flex items-center space-x-4">
-          <div className="flex items-center space-x-2">
+        {/* Stress boxes and score selector */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 gap-2">
+          <div className="flex items-center space-x-2 justify-center">
             {stressValues.map((isStressed, index) => (
               <div
                 key={index}
@@ -184,6 +187,7 @@ const QuadrantBlock = ({ quadrantName, skillValue, aspectValue, stressValues, on
           </select>
         </div>
       </div>
+      {/* Aspect Question/Answer */}
       <div className={`mt-4 border-t ${mainBorderColor} pt-4`}>
         <TextInput
           label="Aspect"
